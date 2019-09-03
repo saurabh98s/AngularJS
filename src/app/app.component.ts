@@ -25,4 +25,5 @@ export class AppComponent {
 }
 
 list=[1,2,3,4,"One","two","three"]
+boundName="Mpo lAb";
 }

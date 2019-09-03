@@ -7,3 +7,11 @@
 <button (click)="decreaseCount()">decreaseCount</button>
 <p *ngIf="count > 2">i am {{count}}</p>
 <li *ngFor="let num of list" >{{num}}</li>
+<br>
+<label for="TwoWayBinding">Binding</label>
+<input type="text"
+ name="mytextbox"
+ id="TwoWayBinding"
+ [(ngModel)]="boundName"
+>
+<p>{(boundName)}</p>
