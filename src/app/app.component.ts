@@ -6,24 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-first-angular-app';
-  name ='saurabh';
-  // this is string interpolation;
-  displayHelloworld() {
-    return 'Hello world';
-
-
-    
+  title = 'angular-calculator-app';
+a=null;
+b=null;
+result=0;
+st="";
+  add(){
+    this.result=this.a+this.b;
+    this.st="Result"+this.result;
   }
- display=this.displayHelloworld(); 
- count=5;
- increaseCount(){
-   this.count+=1;
- }
- decreaseCount(){
-  this.count-=1;
-}
-
-list=[1,2,3,4,"One","two","three"]
-boundName="Mpo lAb";
+  sub(){
+    this.result=this.a-this.b;
+    this.st="Result"+this.result;
+  }
+  mul(){
+    this.result=this.a*this.b;
+    this.st="Result"+this.result;
+  }
+  div(){
+    this.result=this.a/this.b;
+    this.st="Result"+this.result;
+  }
 }

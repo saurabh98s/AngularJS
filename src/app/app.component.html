@@ -1,17 +1,8 @@
-<h1>String interpolation {{title}}</h1>
-<h2>{{name| uppercase}}</h2>
-<!-- string interpolation -->
-<h1>{{display}}</h1>
-<!-- <button click="{{display}}">Button</button> -->
-<button git>increaseCount</button>
-<button (click)="decreaseCount()">decreaseCount</button>
-<p *ngIf="count > 2">i am {{count}}</p>
-<li *ngFor="let num of list" >{{num}}</li>
-<br>
-<label for="TwoWayBinding">Binding</label>
-<input type="text"
- name="mytextbox"
- id="TwoWayBinding"
- [(ngModel)]="boundName"
->
-<p>{(boundName)}</p>
+    <input id="in" type="number" [(ngModel)]="a">enter first number <br>
+    <input type="number" [(ngModel)]="b" >enter second number <br>
+    <input type="radio" name="add" (click)="add()" /> add
+    <input type="radio" name="add" (click)="sub()" /> subtract
+    <input type="radio" name="add" (click)="mul()"  />multiply 
+    <input type="radio" name="add" (click)="div()"  />divide <br>   
+
+   <h1  >{{result}}</h1>
