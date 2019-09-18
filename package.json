@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "to-do-app",
+=======
+  "name": "angular-calculator-app",
+>>>>>>> ab151d95873c1b92bc2e4ae42cf33b74b2821a6e
   "version": "0.0.0",
   "license": "MIT",
   "angular-cli": {},
