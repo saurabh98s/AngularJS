@@ -6,24 +6,38 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-first-angular-app';
-  name ='saurabh';
-  // this is string interpolation;
-  displayHelloworld() {
-    return 'Hello world';
-
-
-    
+  title = 'To do app';
+  todos=[{
+    label:"Do assignment",
+    done: false,
+    priority:3
+  },
+  {
+    label:"Do laundry",
+    done: true,
+    priority:1
+  },{
+    label:"learn angular",
+    done: false,
+    priority:5
+  },{
+    label:"have dinner",
+    done: false,
+    priority:1
   }
- display=this.displayHelloworld(); 
- count=5;
- increaseCount(){
-   this.count+=1;
- }
- decreaseCount(){
-  this.count-=1;
+];
+addTodo(newTodoLabel){
+  var newTodo={
+    label: newTodoLabel,
+    priority:1,
+    done:false
+  };
+  this.todos.push(newTodo);
+ 
 }
+deleteTodo(todo){
+  this.todos = this.todos.filter(t=>t.label!==todo.label);
+   
 
-list=[1,2,3,4,"One","two","three"]
-boundName="Mpo lAb";
+}
 }

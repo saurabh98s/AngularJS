@@ -1,17 +1,23 @@
-<h1>String interpolation {{title}}</h1>
-<h2>{{name| uppercase}}</h2>
-<!-- string interpolation -->
-<h1>{{display}}</h1>
-<!-- <button click="{{display}}">Button</button> -->
-<button git>increaseCount</button>
-<button (click)="decreaseCount()">decreaseCount</button>
-<p *ngIf="count > 2">i am {{count}}</p>
-<li *ngFor="let num of list" >{{num}}</li>
-<br>
-<label for="TwoWayBinding">Binding</label>
-<input type="text"
- name="mytextbox"
- id="TwoWayBinding"
- [(ngModel)]="boundName"
->
-<p>{(boundName)}</p>
+<h1>
+  {{title}}
+</h1>
+<input type="text" #newTodo />
+ <button (click)="addTodo(newTodo.value);newTodo.value=''">ADD</button>
+
+<table>
+  <tr>
+  <th>LABEL</th>
+  <th>PRIORITY</th>
+  <th>DONE</th>
+  <th>ACTION</th>
+</tr>
+<tr *ngFor="let todo of todos">
+  <td>{{todo.label}}</td>
+  <td>{{todo.priority}}</td>
+  <td>{{todo.done}}</td>
+  <td><button (click)="deleteTodo(todo)" >DELETE</button></td>
+
+
+</tr>
+
+</table>
