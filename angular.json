@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "to-do-app1": {
+    "to-do-nehal": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/to-do-app1",
+            "outputPath": "dist/to-do-nehal",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -63,18 +64,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "to-do-app1:build"
+            "browserTarget": "to-do-nehal:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "to-do-app1:build:production"
+              "browserTarget": "to-do-nehal:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "to-do-app1:build"
+            "browserTarget": "to-do-nehal:build"
           }
         },
         "test": {
@@ -89,6 +90,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -111,15 +113,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "to-do-app1:serve"
+            "devServerTarget": "to-do-nehal:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "to-do-app1:serve:production"
+              "devServerTarget": "to-do-nehal:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "to-do-app1"
+    }
+  },
+  "defaultProject": "to-do-nehal"
 }

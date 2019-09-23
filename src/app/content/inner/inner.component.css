@@ -1,0 +1,41 @@
+#input1{
+    /* float: left; */
+    padding-left: 540px;
+
+}
+#inn1{
+    border: none;
+    border-radius: 15px;
+    /* background-color: #b2f5e6; */
+    color: rgb(18, 45, 161);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 20px;
+    /* width: 450px; */
+}
+#disp{
+    /* padding-left: 450px; */
+    /* padding-right: 450px; */
+    height: 360px;
+    width: 450px;
+    margin-left: 370px;
+    border:solid 0px;
+    /* background-color: #b2f5e6; */
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: rgb(18, 45, 161);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#disp table{
+    width: 600px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#in_disp{
+    border: solid 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 400px;
+}
