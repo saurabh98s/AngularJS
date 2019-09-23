@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MatInputModule} from '@angular/material/input';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-<<<<<<< HEAD
   title = 'To do app';
   todos=[{
     label:"Do assignment",
@@ -42,27 +42,3 @@ deleteTodo(todo){
 
 }
 }
-=======
-  title = 'angular-calculator-app';
-a=null;
-b=null;
-result=0;
-st="";
-  add(){
-    this.result=this.a+this.b;
-    this.st="Result"+this.result;
-  }
-  sub(){
-    this.result=this.a-this.b;
-    this.st="Result"+this.result;
-  }
-  mul(){
-    this.result=this.a*this.b;
-    this.st="Result"+this.result;
-  }
-  div(){
-    this.result=this.a/this.b;
-    this.st="Result"+this.result;
-  }
-}
->>>>>>> ab151d95873c1b92bc2e4ae42cf33b74b2821a6e

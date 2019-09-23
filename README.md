@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # ToDoApp
-=======
-# AngularCalculatorApp
->>>>>>> ab151d95873c1b92bc2e4ae42cf33b74b2821a6e
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
