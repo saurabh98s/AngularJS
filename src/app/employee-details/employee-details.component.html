@@ -1,0 +1,16 @@
+<!-- <p>employee-details works!</p> -->
+
+<div > 
+    <table>
+            <thead>
+                    <th> <h3>ID&emsp; &emsp;</h3></th>
+                    <th> <h3>NAME&emsp; &emsp;</h3></th>
+                    <th> <h3>DEPT&emsp; &emsp;</h3></th>
+            </thead>
+            <tr *ngFor="let emp of employeeList">
+                    <td>{{emp.id}}</td>
+                    <td>{{emp.name}}</td>
+                    <td>{{emp.dept}}</td>
+            </tr>
+        </table>
+  </div>
