@@ -30,10 +30,11 @@ export class InnerComponent implements OnInit {
 
   ngOnInit() {
   }
+  i=1
   addTodo(newTodoLabel){
     var newTodo = {
       label : newTodoLabel,
-      priority : 1,
+      priority : this.i++,
       done : false
     };
     this.todos.push(newTodo);
