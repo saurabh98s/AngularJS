@@ -1,4 +1,5 @@
-
+## A small preview:
+![screenshot](https://github.com/saurabh98s/AngularJS/blob/master/Screenshot%20(2).png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
