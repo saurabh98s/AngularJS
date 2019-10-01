@@ -18,13 +18,14 @@
                         <th> <h3>DONE?&emsp;</h3></th>
                         <th> <h3>DELETE? &emsp; </h3></th>
                 </tr>
-                <tr *ngFor="let todo of todos">
-                        <td>{{todo.label}}</td>
-                        <td>{{todo.priority}}</td>
-                        <td>{{todo.done ? '&#10003;' : '&#10005;' }}</td>
+               <tr *ngFor="let todo of todos">
+                <td><mat-card>{{todo.label}}</mat-card></td>
+                 <td><mat-card>{{todo.priority}}</mat-card></td>
+                        <td>{{todo.done ? '&#10003;' : '&#10005;' }}</td>  
                         <td>
                                 <button mat-raised-button  (click)="deleteTodo(todo)">delete</button>
                         </td>
                 </tr>
+        
         </table>
 </div>

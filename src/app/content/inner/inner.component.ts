@@ -43,6 +43,9 @@ export class InnerComponent implements OnInit {
   deleteTodo(todo){
     this.todos = this.todos.filter( t => t.label !== todo.label);
   }
-  
+
+  // todoCompleted(index) {
+  //   this.todos[index].completed = !this.todos[index].completed
+  // }
 
   } 

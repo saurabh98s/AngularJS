@@ -14,6 +14,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatListModule} from '@angular/material/list';
 import {FormsModule} from '@angular/forms';
 import {MatTableModule} from '@angular/material/table';
+import {MatCardModule} from '@angular/material/card';
+
 // import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
@@ -33,7 +35,8 @@ import {MatTableModule} from '@angular/material/table';
     MatInputModule,
     MatListModule,
     FormsModule,
-    MatTableModule
+    MatTableModule,
+    MatCardModule
   
   ],
   providers: [],

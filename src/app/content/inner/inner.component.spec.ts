@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import {MatRippleModule} from '@angular/material/core';
 import { InnerComponent } from './inner.component';
 
 describe('InnerComponent', () => {
