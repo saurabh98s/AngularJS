@@ -2,10 +2,10 @@
 <div id="input1">
     <br><br>
     <form action="">
-            <mat-form-field class="example-full-width">
+            <mat-form-field color="warn" class="example-full-width">
                     <input id="item" matInput placeholder="ADD A NEW TASK" #newTodo  />
                   </mat-form-field>
-       &nbsp; <button mat-fab color="primary" (click)="addTodo(newTodo.value); newTodo.value=''">ADD</button>
+       &nbsp; <button mat-fab color="warn" (click)="addTodo(newTodo.value); newTodo.value=''">ADD</button>
     </form>
 </div>
 <br><br>
